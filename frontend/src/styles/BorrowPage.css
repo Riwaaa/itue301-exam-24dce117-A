@@ -1,0 +1,131 @@
+.borrow-layout {
+  max-width: 520px;
+}
+
+.panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 26px;
+}
+
+.panel-title {
+  font-size: 15px;
+  font-weight: 620;
+  margin-bottom: 18px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.field label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 7px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fcfcfd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: var(--ink);
+  background: var(--paper);
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* single live line under the fields */
+.live-line {
+  font-size: 13px;
+  color: var(--ink-soft);
+  padding: 11px 13px;
+  margin-bottom: 14px;
+  background: #fafbfc;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+/* selected book preview */
+.preview {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fcfcfd;
+  margin-bottom: 18px;
+}
+
+.preview-thumb {
+  flex: 0 0 52px;
+  aspect-ratio: 3 / 4;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #eff0f2;
+}
+
+.preview-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-title {
+  font-size: 14px;
+  font-weight: 620;
+  line-height: 1.3;
+}
+
+.preview-author {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+/* success banner */
+.success {
+  margin-top: 16px;
+  padding: 18px;
+  border: 1px solid #cdebd9;
+  background: var(--ok-bg);
+  border-radius: 12px;
+}
+
+.success-title {
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--ok);
+}
+
+.success-text {
+  font-size: 13px;
+  color: #2c6b4a;
+  margin-top: 3px;
+}
+
+.error-note {
+  margin-top: 14px;
+  padding: 13px 15px;
+  border: 1px solid #f3d3d3;
+  background: var(--no-bg);
+  border-radius: 11px;
+  font-size: 13px;
+  color: var(--no);
+}
